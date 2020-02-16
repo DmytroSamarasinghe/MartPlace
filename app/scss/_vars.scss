@@ -1,0 +1,19 @@
+$ff-r: "Quicksand-Regular", sans-serif; //regular
+$ff-fg:"Quicksand", sans-serif;  //font-google
+$text: #555555;
+$bg:#eef1f3; 
+$grey:#898f96;
+$blue:#0674ec;
+$black:#333333;
+$border:#d9dfe5;
+$bg-blue:#2b4ed0;
+
+@mixin f500{
+    font-family: $ff-fg;
+    font-weight: 500;
+}
+
+@mixin f700{
+    font-family: $ff-fg;
+    font-weight: 700;
+}
