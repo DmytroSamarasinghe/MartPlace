@@ -14,8 +14,8 @@ $(function () {
         dots: false,
         // arrows: false,
         appendArrows: $('.products__slider-btn'),
-        nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
-        prevArrow: '<button type="button" class="slick-btn slick-prev"></button>', 
+        nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
+        prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>', 
     });
 
 });
