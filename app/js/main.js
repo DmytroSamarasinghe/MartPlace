@@ -15,4 +15,14 @@ $(function () {
         prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>', 
     });
 
+    $(".bottom-products__inner").slick({
+        dots: false, 
+        slidesToShow: 3,
+        slidesToScroll: 3,  
+        variableWidth: true, 
+        appendArrows: $('.bottom-products__slider-btn'),
+        nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
+        prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>', 
+    });
+
 });

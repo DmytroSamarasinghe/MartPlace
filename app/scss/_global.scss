@@ -33,3 +33,20 @@ body {
   padding: 0 15px;
 }
 
+// start_icons
+
+.lnr-alarm, .lnr-envelope, .lnr-cart{
+  color: #7e8fa1;
+  font-size: 20px;
+}
+.lnr-envelope:before { 
+  position: relative;
+  top: -3px;
+}
+
+.lnr-magnifier{
+font-size: 15px;
+color: #fff;
+}
+
+// end_icons
