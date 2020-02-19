@@ -32,7 +32,10 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-
+.contant {
+  padding: 120px 0 120px;
+  // margin-bottom: 30px;
+}
 // start_icons
 
 .lnr-alarm, .lnr-envelope, .lnr-cart{
@@ -47,6 +50,6 @@ body {
 .lnr-magnifier{
 font-size: 15px;
 color: #fff;
-}
+} 
 
 // end_icons
