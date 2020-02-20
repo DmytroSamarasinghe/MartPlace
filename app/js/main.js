@@ -24,5 +24,5 @@ $(function () {
         nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
         prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>', 
     });
-
+    var mixer = mixitup('.all-products__inner-box');
 });
