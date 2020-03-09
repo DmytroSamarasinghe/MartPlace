@@ -52,7 +52,53 @@ body {
 }
 .contant {
   padding: 120px 0 120px;
-} 
+}
+
+.jq-selectbox__select {
+  height: 42px;
+  padding: 6px 82px 8px 19px;
+  border: 1px solid #eceff2;
+  border-bottom-color: none;
+  border-radius: 3px;
+  background: none;
+  box-shadow: none;
+  font: none;
+  color: #555;
+  text-shadow: none;
+}
+.jq-selectbox__trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 100%;
+  border-left: none; 
+  &::before {
+    content: "\e874";
+    font-family: "Linearicons-Free";
+    position: absolute;
+    top: 6px;
+    right: 18px;
+    font-size: 10px;
+  }
+}
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.jq-selectbox__select:hover {
+  background: none;
+}
+.jq-selectbox__dropdown {
+  top: 40px !important;
+}
+.jq-selectbox li {
+  padding: 10px 10px 10px;
+}
 // start_icons
 
 .lnr-alarm,
