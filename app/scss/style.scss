@@ -2189,6 +2189,19 @@
       height: 10px;
     }
   }
+  &.tab-item__list-mark {
+    li {
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/Single-Product/mark.png);
+        left: 0;
+        bottom: 5px;
+        width: 13px;
+        height: 10px;
+      }
+    }
+  }
   &.tab-item__list-number {
     padding: 0;
     counter-reset: li;
