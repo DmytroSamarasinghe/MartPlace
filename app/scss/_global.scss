@@ -26,7 +26,7 @@ li {
   list-style: none;
 }
 body {
-  font-family: "Quicksand-Regular", sans-serif;
+  font-family: $ff-fg;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -54,9 +54,12 @@ body {
   padding: 120px 0 120px;
 }
 
+button{
+  @include border();
+}
 .jq-selectbox__select {
   height: 42px;
-  padding: 6px 82px 8px 19px;
+  padding: 0px 82px 0px 19px;
   border: 1px solid #eceff2;
   border-bottom-color: none;
   border-radius: 3px;
@@ -72,7 +75,7 @@ body {
   right: 0;
   width: 45px;
   height: 100%;
-  border-left: none; 
+  border-left: none;
   &::before {
     content: "\e874";
     font-family: "Linearicons-Free";
@@ -93,11 +96,21 @@ body {
 .jq-selectbox__select:hover {
   background: none;
 }
-.jq-selectbox__dropdown {
+.jq-selectbox__select-text, .jq-selectbox__dropdown > ul {
+  font-family: "Quicksand-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 42px;
+}
+.jq-selectbox__dropdown > ul >li{
+  font-size: 15px;
+  line-height: 15px;
+}
+.jq-selectbox__dropdown { 
   top: 40px !important;
 }
 .jq-selectbox li {
-  padding: 10px 10px 10px;
+  padding: 15px 10px 15px;
 }
 // start_icons
 
