@@ -711,15 +711,57 @@
 }
 .products__item-img {
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  position: relative;
   img {
     height: 100%;
     max-width: 555px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: 1;
+  }
+  &:hover .products__box-shadow {
+    height: 230px;
+    line-height: 230px;
+    a {
+      padding: 12.5px 30px;
+      margin-top: 65px;
+      height: auto;
+      border: 1px solid #fff;
+      border-radius: 50px;
+    }
   }
 }
+.products__box-shadow {
+  position: absolute;
+  z-index: 2;
+  height: 0;
+  width: 360px;
+  overflow: hidden;
+  line-height: 0px;
+  top: 0;
+  background: linear-gradient(90deg, #7221a0, #0674ec);
+  transition: all, 0.5s;
+  .products__box-shadow-link {
+    text-align: center;
+  }
+  a {
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 15px;
+    line-height: 15px;
 
+    padding: 0;
+    margin-top: 0;
+    border: 1px solid transparent;
+    border-radius: 0;
+  }
+  a + a {
+    margin-left: 11px;
+  }
+}
 .products__item-info {
   background-color: #fff;
   padding: 50px 50px 25px;
@@ -950,9 +992,6 @@
     background-size: cover;
     background-position: center;
     border-radius: 4px 4px 0 0;
-  }
-  .products__box-shadow {
-    display: none;
   }
   .products__item {
     max-width: 360px;
@@ -1840,6 +1879,13 @@
     width: 260px;
     margin: 0 auto;
   }
+  .products__item-img:hover .products__box-shadow {
+    height: 160px;
+    line-height: 160px;
+  }
+  .products__box-shadow {
+    width: 262px;
+  }
   .products__item-images {
     width: 262px;
     height: 160px;
@@ -1889,6 +1935,19 @@
     .products__item-contant,
     .products__item-info {
       display: flex;
+    }
+    .products__item-img {
+      .products__box-shadow {
+        width: 230px;
+        height: 0;
+        border-radius: 0;
+        line-height: 0;
+      }
+      &:hover .products__box-shadow { 
+        height: 210px;
+        border-radius: 4px 0 0 4px;
+        line-height: 229px;
+      }
     }
     .products__item-box {
       .products__item-title,
