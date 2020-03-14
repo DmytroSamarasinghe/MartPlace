@@ -81,6 +81,7 @@ $(function () {
         return false;
     });
 
-
+     
+    // 
     var mixer = mixitup('.all-products__inner-box');
 });
