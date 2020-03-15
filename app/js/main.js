@@ -45,15 +45,15 @@ $(function () {
     }); 
 
     // $('.category-page__products-aside')(function () { 
-    $('.categories>.aside__item-top').on('click', function () {
+    $('.category-page__products .categories>.aside__item-top').on('click', function () {
         $('.categories>.aside__item-bottom').slideToggle();
         $('.categories>.aside__item-top').toggleClass('disable'); 
     });
-    $('.filter-products>.aside__item-top').on('click', function () {
+    $('.category-page__products .filter-products>.aside__item-top').on('click', function () {
         $('.filter-products>.aside__item-bottom').slideToggle();
         $('.filter-products>.aside__item-top').toggleClass('disable');
     });
-    $('.pricing-range>.aside__item-top').on('click', function () {
+    $('.category-page__products .pricing-range>.aside__item-top').on('click', function () {
         $('.pricing-range>.aside__item-bottom').slideToggle();
         $('.pricing-range>.aside__item-top').toggleClass('disable');
     });
@@ -71,15 +71,29 @@ $(function () {
     });
 
     $('input[type="file"], select').styler(); 
-
-    $('.product-one__tabs .tab, .settins__tabs .tab').on('click', function (event) {
-        var id = $(this).attr('data-id');
-        $('.product-one__tabs, .settins__tabs').find('.tab-item').removeClass('active-tab').hide();
-        $('.product-one__tabs .tabs, .settins__tabs .tabs').find('.tab').removeClass('active');
-        $(this).addClass('active');
-        $('#' + id).addClass('active-tab').fadeIn();
-        return false;
+//blog
+    $('.popular-posts-btn').on('click', function () {
+        $('.latest-posts__box').removeClass('list');
+        $('.popular-posts__box').addClass('list');
+        $('.latest-posts-btn').removeClass('active');
+        $('.popular-posts-btn').addClass('active');
     });
+    $('.latest-posts-btn').on('click', function () {
+        $('.latest-posts__box').addClass('list');
+        $('.popular-posts__box').removeClass('list');
+        $('.popular-posts-btn').removeClass('active');
+        $('.latest-posts-btn').addClass('active');
+    });
+//blog
+
+    // $('.product-one__tabs .tab, .settins__tabs .tab').on('click', function (event) {
+    //     var id = $(this).attr('data-id');
+    //     $('.product-one__tabs, .settins__tabs').find('.tab-item').removeClass('active-tab').hide();
+    //     $('.product-one__tabs .tabs, .settins__tabs .tabs').find('.tab').removeClass('active');
+    //     $(this).addClass('active');
+    //     $('#' + id).addClass('active-tab').fadeIn();
+    //     return false;
+    // });
 
      
     // 
