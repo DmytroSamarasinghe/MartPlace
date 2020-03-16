@@ -2841,7 +2841,7 @@
 }
 .login__top {
   text-align: center;
-  padding: 55px 0 26px;
+  padding: 55px 50px 26px;
 }
 .login__title {
   font-size: 26px;
@@ -2885,6 +2885,7 @@
       width: 20px;
       height: 20px;
       z-index: 2; 
+      border:none;
     }
   } 
 }
@@ -2894,8 +2895,9 @@
   bottom: 0;
   margin: auto 0;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 19px;
+  width: 19px;
+  border: 1px solid #ccc;
   background-color: #f4f5f8;
   border-radius: 50%;
 }
@@ -2904,6 +2906,7 @@
   label.login__radio {
     display: inline-block;
     margin: 0;
+    color: $text;
   }
   input[type="text"] {
     max-width: 455px;
