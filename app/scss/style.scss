@@ -2842,6 +2842,9 @@
 .login__top {
   text-align: center;
   padding: 55px 50px 26px;
+  .recover__text{
+    text-align: left;
+  }
 }
 .login__title {
   font-size: 26px;
@@ -2938,6 +2941,17 @@
   }
 }
 // end-login
+
+//start-recover
+.recover{
+  .login__text{
+    text-align: left;
+  }
+  .login__btn{
+    margin-bottom: 5px;
+  }
+}
+// end-recover
 .disable {
   padding-bottom: 0;
   border-bottom: none;
