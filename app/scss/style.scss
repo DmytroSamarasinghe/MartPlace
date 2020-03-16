@@ -2047,10 +2047,7 @@
       border-left: 1px solid #ececec;
     }
   }
-}
-.pagination {
-  // float: right;
-}
+} 
 .pagination__list {
   display: flex;
   justify-content: flex-end;
@@ -2663,9 +2660,7 @@
   color: $blue;
   @include f500;
   margin-bottom: 20px;
-}
-.blog__item-box {
-}
+} 
 .blog__item-icons {
   display: flex;
   padding-bottom: 29px;
@@ -2832,8 +2827,114 @@
     border-radius: 4px;
   }
 }
-
 // end-blog
+
+//start-login
+.login {
+  margin: 70px 0 120px;
+}
+.login__contant {
+  max-width: 555px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.login__top {
+  text-align: center;
+  padding: 55px 0 26px;
+}
+.login__title {
+  font-size: 26px;
+  line-height: 28px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.login__text {
+  line-height: 28px;
+}
+.login__box {
+  border-top: 1px solid #e8ebf0;
+  padding: 0 50px 55px;
+  label,
+  input,
+  .login__bottom {
+    display: block;
+  }
+  label {
+    @include f500;
+    line-height: 26px;
+    margin-bottom: 15px;
+    color: #000;
+  }
+}
+
+.login__radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  input {
+    display: inline-block;
+    position: absolute;
+    opacity: 0;
+    outline: none;
+    cursor: pointer;
+    &:checked ~ .checkmark {
+      position: absolute;
+      background-image: url(../images/checkmark.png);
+      width: 20px;
+      height: 20px;
+      z-index: 2; 
+    }
+  } 
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #f4f5f8;
+  border-radius: 50%;
+}
+.login__box-input {
+  margin-top: 30px;
+  label.login__radio {
+    display: inline-block;
+    margin: 0;
+  }
+  input[type="text"] {
+    max-width: 455px;
+    width: 100%;
+    background-color: #f4f5f8;
+    color: #898f96;
+    line-height: 30px;
+    padding: 10px 20px;
+    border: none;
+  }
+}
+.login__btn {
+  margin: 30px 0;
+  color: #fff;
+  &:hover {
+    background-color: $purpul;
+  }
+}
+.login__bottom {
+  span {
+    color: #898f96;
+    line-height: 26px;
+    a {
+      color: $blue;
+    }
+  }
+  span + span {
+    margin-left: 25px;
+  }
+}
+// end-login
 .disable {
   padding-bottom: 0;
   border-bottom: none;
