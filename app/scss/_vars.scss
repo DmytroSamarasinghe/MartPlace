@@ -1,5 +1,5 @@
 $ff-r: "Quicksand-Regular", sans-serif; //regular
-$ff-fg: 'Quicksand', sans-serif; //font-google
+$ff-fg: "Quicksand", sans-serif; //font-google
 $text: #555555;
 $bg: #eef1f3;
 $grey: #898f96;
@@ -10,6 +10,7 @@ $bg-blue: #2b4ed0;
 $bg-green: #62d03b;
 $bg-red: #ff6a6c;
 $purpul: #7347c1;
+$bg-yellow: #feb71d;
 
 @mixin f500 {
   font-family: $ff-fg;
@@ -32,10 +33,10 @@ $purpul: #7347c1;
   }
 }
 
-@mixin border() { 
-    border: none;
-    background-color: #fff;
-    outline: none;
-    cursor: pointer;
-    padding: 0;
+@mixin border() {
+  border: none;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
 }
