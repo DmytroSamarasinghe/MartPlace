@@ -57,6 +57,16 @@ body {
 button{
   @include border();
 }
+.input-text{
+  display: block;
+  width: 359px;
+  border: 1px solid #e7e7e7;
+  line-height: 48px;
+  font-size: 16px;
+  padding-left: 19px;
+  padding-right: 20px;
+
+}
 .jq-selectbox__select {
   height: 42px;
   padding: 0px 82px 0px 19px;
