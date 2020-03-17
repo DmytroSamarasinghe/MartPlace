@@ -1106,7 +1106,7 @@
     color: #000;
     margin-bottom: 28px;
     font-size: 36px;
-    line-height: 26px;
+    line-height: 36px;
     span {
       color: $blue;
     }
@@ -2959,7 +2959,7 @@
 .how-it-works__item {
   background-color: #fff;
 }
-.how-it-works__item-contant {
+.how-it-works__item-contant { 
   padding: 95px 0;
   background-color: #fff;
   display: flex;
@@ -2972,6 +2972,8 @@
 .how-it-works__item-box {
   max-width: 457px;
   width: 100%;
+  padding-left: 20px;
+  flex-wrap: wrap;
 }
 .how-it-works__item-title {
   font-size: 30px;
@@ -3125,7 +3127,8 @@
   }
 }
 .pricing-plan__item-btn {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   font-size: 18px;
   border-radius: 4px;
   margin-top: 25px;
