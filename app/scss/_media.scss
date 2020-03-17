@@ -87,6 +87,62 @@
       margin-top: 30px;
     }
   }
+  .blog__products-contant {
+    flex-wrap: wrap;
+  }
+
+  .blog__item-img img {
+    width: 100%;
+  }
+  .blog__item {
+    max-width: 100%;
+  }
+  .blog__products-aside {
+    margin-left: 0;
+    order: -1;
+  }
+  .blog__products-aside .aside__item {
+    max-width: 100%;
+  }
+  .blog__products-aside .popular-posts.latest-posts .aside__item-top,
+  .blog__products-aside .latest-posts.latest-posts .aside__item-top {
+    justify-content: center;
+  }
+  .popular-posts__inner,
+  .latest-posts__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .popular-posts__item + .popular-posts__item,
+  .latest-posts__item + .latest-posts__item {
+    border-top: 1px solid transparent;
+    padding-top: 0;
+  }
+  .popular-posts__item,
+  .latest-posts__item {
+    display: flex;
+    margin-top: 10px;
+    width: 45%;
+    margin-left: auto;
+    .popular-posts__info,
+    .latest-posts__info {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+  .aside__link-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blog__products-aside {
+    .categories,
+    .aside__baner-img {
+      display: none;
+    }
+  }
+  .search__inner-form {
+    max-width: 100%;
+  }
 }
 @media (max-width: 1024px) {
   .footer__item-left {
@@ -347,6 +403,31 @@
       margin-top: 10px;
     }
   }
+  .blog__products-aside {
+    .aside__item {
+      padding: 15px;
+    }
+  }
+  .blog__item-info {
+    padding: 40px 15px;
+  }
+  .popular-posts__item,
+  .latest-posts__item {
+    width: 100%;
+  }
+  .blog__item-icons {
+    flex-wrap: wrap;
+    li {
+      width: 45%;
+      margin-top: 15px;
+    }
+    li + li {
+      margin-left: 0;
+    }
+  }
+  .aside__link-box {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 460px) {
   .not-found-img {
@@ -358,6 +439,14 @@
     background-color: #fff;
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .pagination__list{
+    display: block;
+    li{
+      display: inline-block;
+      margin-top: 15px;
+    }
+
   }
 }
 @media (max-width: 400px) {
@@ -395,6 +484,12 @@
   }
   .pricing-plan__item-box {
     padding: 30px 15px;
+  }
+
+  .blog__item-icons { 
+    li {
+      width: 100%;
+    }
   }
 }
 @media (min-width: 1171px) {

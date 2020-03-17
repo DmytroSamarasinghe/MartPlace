@@ -1519,6 +1519,9 @@
       width: 110px;
       color: #fff;
     }
+    form{
+      position: relative;
+    }
   }
 }
 .icons-box__social {
@@ -2411,8 +2414,9 @@
     justify-content: space-between;
     color: #333333;
     @include f500;
-    span {
-      width: 164px;
+    span { 
+      max-width: 164px;
+      width: 100%;
       font-weight: 400;
       color: $text;
     }
@@ -2508,10 +2512,12 @@
   }
   .category-page__products-info .products__box-shadow,
   .small-products .products__item.list .products__item-img .products__box-shadow {
-    width: 360px;
+    max-width: 300px;
+    width: 100%;
   }
   .small-products .products__item.list .products__item-box {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
   }
   .small-products .products__item.list .products__item-box .products__cms {
     margin-top: 10px;
@@ -2519,7 +2525,8 @@
   .category-page__products-info .products__item-img:hover .products__box-shadow {
     line-height: 260px;
     min-height: 230px;
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
   }
   .small-products .products__item.list .products__item-info {
     width: 100%;
@@ -2532,7 +2539,8 @@
   }
   .small-products .products__item.list .products__item-img:hover .products__box-shadow {
     min-height: 230px;
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
   }
   .small-products .products__item.list .products__item-img:hover .products__box-shadow {
     line-height: 250px;
@@ -2546,7 +2554,8 @@
   .products__item-images,
   .small-products .products__item.list .products__item-images {
     min-height: 230px;
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
   }
   .category-page__products-info .products__item-top {
     margin: 0;
@@ -2621,7 +2630,7 @@
   margin-top: 67px;
   margin-bottom: 120px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 //blog__products-info
 .blog__products-info {
@@ -2698,7 +2707,8 @@
 .blog__products-aside {
   margin-left: 30px;
   .aside__item {
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -3231,7 +3241,7 @@
   margin-bottom: 40px;
   color: #000;
 }
-.contact__box-container { 
+.contact__box-container {
   margin: 0 auto;
   max-width: 750px;
   width: 100%;
