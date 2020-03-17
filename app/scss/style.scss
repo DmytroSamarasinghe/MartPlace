@@ -3250,6 +3250,25 @@
   min-width: 170px;
 }
 //end_contact
+
+//end_not-found
+.not-found {
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 100px;
+} 
+.not-found__contant {
+max-width: 600px;
+width: 100%;
+margin: 0 auto;
+text-align: center;
+}  
+.not-found__title { 
+  font-size: 30px;
+  line-height: 80px;
+  color: #000;
+} 
+//end_not-found
 .disable {
   padding-bottom: 0;
   border-bottom: none;
