@@ -107,6 +107,9 @@
       }
     }
   }
+  .contact__box-item input {
+    padding-left: 19px;
+  }
 }
 @media (max-width: 960px) {
   .header__top-btn {
@@ -116,15 +119,15 @@
   .header__top-profil {
     margin-left: 0;
   }
-  .how-it-works__item-contant{
+  .how-it-works__item-contant {
     max-width: 458px;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
-  .how-it-works__item-box{
+  .how-it-works__item-box {
     margin-top: 30px;
   }
-  .how-it-works__item-title{
+  .how-it-works__item-title {
     text-align: center;
   }
 }
@@ -212,6 +215,31 @@
   .footer__item-right {
     max-width: 100%;
   }
+
+  .contact__inner {
+    flex-wrap: wrap;
+  }
+  .contact__item {
+    max-width: 100%;
+    & + .contact__item {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
+
+  .contact__box-container {
+    padding: 0 15px;
+  }
+  .contact__box-item {
+    display: block;
+    input {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+    input + input {
+      margin-left: 0;
+    }
+  }
 }
 @media (max-width: 700px) {
   .footer__item-list {
@@ -281,19 +309,43 @@
     right: 12%;
     left: auto;
   }
-  .question .tooltiptext::after { 
-    left: 100%; 
+  .question .tooltiptext::after {
+    left: 100%;
     border-color: transparent transparent transparent #555;
   }
-  .how-it-works__item-img{
-    img{
+  .how-it-works__item-img {
+    img {
       width: 280px;
       display: block;
       margin: 0 auto;
     }
   }
-  .how-it-works__item-contant{
+  .how-it-works__item-contant {
     padding: 40px 0;
+  }
+  .contact__contant {
+    padding: 60px 0;
+  }
+  .login__box {
+    padding: 0 15px 45px;
+  }
+  .login__top {
+    padding: 26px 15px;
+  }
+  .terms-conditions__item-title {
+    padding: 30px 15px;
+  }
+  .terms-conditions__item-text {
+    padding: 20px 15px;
+  }
+  .login__bottom {
+    span {
+      display: block;
+    }
+    span + span {
+      margin-left: 0;
+      margin-top: 10px;
+    }
   }
 }
 @media (max-width: 460px) {
@@ -341,7 +393,7 @@
     font-size: 20px;
     line-height: 20px;
   }
-  .pricing-plan__item-box{
+  .pricing-plan__item-box {
     padding: 30px 15px;
   }
 }

@@ -1625,6 +1625,7 @@
 }
 .breadcrumbs__title {
   font-size: 30px;
+  line-height: 30px;
   margin-top: 28px;
   color: #fff;
 }
@@ -2959,7 +2960,7 @@
 .how-it-works__item {
   background-color: #fff;
 }
-.how-it-works__item-contant { 
+.how-it-works__item-contant {
   padding: 95px 0;
   background-color: #fff;
   display: flex;
@@ -3167,14 +3168,14 @@
   }
 }
 .contact {
-  iframe{
+  iframe {
     display: block;
     width: 100%;
   }
 }
 .contact__contant {
   padding: 120px 0;
-} 
+}
 .contact__inner {
   margin-top: 60px;
   display: flex;
@@ -3186,12 +3187,15 @@
   min-height: 295px;
   width: 100%;
   background-color: #fff;
-  padding: 45px 60px;
+  padding: 45px 10px;
   text-align: center;
   align-items: center;
   .contact__link {
     display: block;
     line-height: 30px;
+  }
+  & + .contact__item {
+    margin-left: 10px;
   }
 }
 .contact__title {
@@ -3225,13 +3229,14 @@
   padding-bottom: 23px;
   border-bottom: 1px solid #e7e7e7;
   margin-bottom: 40px;
+  color: #000;
 }
-.contact__box-container {
+.contact__box-container { 
   margin: 0 auto;
   max-width: 750px;
   width: 100%;
   text-align: center;
-} 
+}
 .contact__box-item {
   display: flex;
   margin-bottom: 30px;
@@ -3243,7 +3248,7 @@
     padding-left: 19px;
   }
   textarea {
-    width: 100%;
+    max-width: 100%;
     min-height: 131px;
     line-height: 18px;
     resize: none;
@@ -3259,18 +3264,18 @@
   background-color: #fff;
   padding-top: 60px;
   padding-bottom: 100px;
-} 
+}
 .not-found__contant {
-max-width: 600px;
-width: 100%;
-margin: 0 auto;
-text-align: center;
-}  
-.not-found__title { 
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.not-found__title {
   font-size: 30px;
   line-height: 80px;
   color: #000;
-} 
+}
 //end_not-found
 .disable {
   padding-bottom: 0;
