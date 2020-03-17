@@ -3130,6 +3130,30 @@
   margin-top: 25px;
 }
 //end_pricing-plan
+
+//start_terms-conditions 
+.terms-conditions__contant {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.terms-conditions__inner {
+  background-color: #fff;
+  padding-bottom: 70px;
+} 
+.terms-conditions__item-title { 
+  padding-bottom: 31px;
+  padding: 30px;
+  padding-top: 40px;
+  border-bottom: 1px solid #e8ebf0;
+  font-size: 24px;
+  color: #000;
+}
+.terms-conditions__item-text {
+  padding: 20px 30px;
+  padding-bottom: 10px;
+  line-height: 30px;
+}
+//end_terms-conditions
 .disable {
   padding-bottom: 0;
   border-bottom: none;
