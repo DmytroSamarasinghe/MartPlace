@@ -38,7 +38,7 @@ $(function () {
         ]
     });
 
-    $(".bottom-products__inner").slick({
+    $(".bottom-products .bottom-products__inner").slick({
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 3,

@@ -5,6 +5,67 @@
       padding: 100px 30px;
     }
   }
+  .single-product {
+    .tab {
+      padding: 26px 10px;
+    }
+    .radio {
+      display: inline-block;
+    }
+    .single-product__inner {
+      flex-wrap: wrap;
+    }
+    .single-product__contant {
+      max-width: 100%;
+      margin-right: 0;
+    }
+    .single-product__img img {
+      width: 100%;
+    }
+    .single-product__aside {
+      width: 100%;
+    }
+    .single-product__aside-item {
+      width: 100%;
+    }
+    .single-product__aside-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .single-product__aside-btn button + button {
+      margin-top: 0;
+    }
+    .single-product__aside-popularity,
+    .single-product__aside-info {
+      span {
+        margin-left: 20px;
+        margin-right: auto;
+      }
+    }
+    .single-product__aside-link {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .single-product__inner.small-products {
+    .products__item-bottom {
+      flex-wrap: wrap;
+    }
+    .products__item-star {
+      width: 50%;
+    }
+    .products__item-shop,
+    .products__item-star {
+      margin-top: 10px;
+    }
+    .products__item-star.start-on {
+      margin-left: 0;
+    }
+    .products__box-shadow{
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
@@ -54,6 +115,9 @@
   }
   .bottom-products {
     display: none;
+  }
+  .bottom-products.single-product__add {
+    display: block;
   }
   .info-box {
     .info__inner {
@@ -469,7 +533,7 @@
 
   .news {
     .small-products .products__item {
-      flex-basis: calc(50% - 30px); 
+      flex-basis: calc(50% - 30px);
       max-width: 50%;
     }
   }
@@ -606,8 +670,30 @@
       }
     }
   }
+
+  .single-product__inner {
+    margin-left: -20px;
+    flex-wrap: wrap;
+    .products__item{
+      flex-basis: calc(50% - 20px);
+      margin-left: 20px;
+    }
+  }
 }
 @media (max-width: 760px) {
+  .single-product {
+    .tabs {
+      display: block;
+    }
+    .tab-item__big-img {
+      height: 400px;
+    }
+    .single-product__img {
+      img {
+        min-height: 230px;
+      }
+    }
+  }
   .filter-left {
     button {
       margin-right: 30px;
@@ -674,7 +760,6 @@
       width: 100%;
     }
   }
-  
 }
 @media (max-width: 600px) {
   .logo {
@@ -799,25 +884,78 @@
   .about-company__inner {
     flex-wrap: wrap;
   }
-  
+
   .news {
     .small-products .products__item {
-      flex-basis: 100%; 
+      flex-basis: 100%;
       max-width: 100%;
     }
   }
-  .join-us{
-    .join-us__inner::before{
+  .join-us {
+    .join-us__inner::before {
       display: none;
     }
-    .join-us__inner{
+    .join-us__inner {
       flex-wrap: wrap;
     }
-    .join-us__item{
+    .join-us__item {
       width: 100%;
     }
     .join-us__item + .join-us__item {
       border-top: 1px solid #e8eaf3;
+    }
+  }
+
+  .single-product {
+    .single-product__box-right {
+      margin-left: 0;
+    }
+    .single-product__box,
+    .single-product__link {
+      display: block;
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+      button + button {
+        margin-top: 20px;
+      }
+    }
+    .single-product__link-social .icons-box__social {
+      margin-top: 20px;
+    }
+    .icons-box__social {
+      display: flex;
+      justify-content: center;
+    }
+    .single-product__link-social {
+      margin-left: 0;
+    }
+    .single-product__aside-btn,
+    .single-product__aside-link {
+      display: block;
+      button,
+      a {
+        display: block;
+        margin: 0 auto;
+      }
+      button + button,
+      a + a {
+        margin-top: 20px;
+      }
+    }
+  }
+  
+  .single-product__inner {
+    margin-left: 0;
+    flex-wrap: wrap;
+    .products__item{
+      flex-basis: 100%;
+      margin-left:0 ;
+      margin: 0 auto;
+    }
+    .products__item +.products__item{
+      margin-top: 20px;
     }
   }
 }
@@ -941,6 +1079,18 @@
     a + a {
       margin-left: auto;
       margin-top: 20px;
+    }
+  }
+
+  .single-product {
+    .single-product__aside-contant {
+      padding: 15px;
+    }
+    .tab_content {
+      padding: 50px 15px;
+    }
+    .single-product__link {
+      padding: 20px 5px;
     }
   }
 }
