@@ -13,6 +13,29 @@ $(function () {
         appendArrows: $('.products__slider-btn'),
         nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
         prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
 
     $(".bottom-products__inner").slick({
@@ -23,6 +46,16 @@ $(function () {
         appendArrows: $('.bottom-products__slider-btn'),
         nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
         prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+           
+        ]
     });
 
 
@@ -42,12 +75,12 @@ $(function () {
         from: 30,
         to: 300,
         prefix: "$",
-    }); 
+    });
 
     // $('.category-page__products-aside')(function () { 
     $('.category-page__products .categories>.aside__item-top').on('click', function () {
         $('.categories>.aside__item-bottom').slideToggle();
-        $('.categories>.aside__item-top').toggleClass('disable'); 
+        $('.categories>.aside__item-top').toggleClass('disable');
     });
     $('.category-page__products .filter-products>.aside__item-top').on('click', function () {
         $('.filter-products>.aside__item-bottom').slideToggle();
@@ -70,8 +103,8 @@ $(function () {
         $('.filter-list').addClass('active');
     });
 
-    $('input[type="file"], select').styler(); 
-//blog
+    $('input[type="file"], select').styler();
+    //blog
     $('.popular-posts-btn').on('click', function () {
         $('.latest-posts__box').removeClass('list');
         $('.popular-posts__box').addClass('list');
@@ -84,7 +117,7 @@ $(function () {
         $('.popular-posts-btn').removeClass('active');
         $('.latest-posts-btn').addClass('active');
     });
-//blog
+    //blog
 
     // $('.product-one__tabs .tab, .settins__tabs .tab').on('click', function (event) {
     //     var id = $(this).attr('data-id');
@@ -95,7 +128,7 @@ $(function () {
     //     return false;
     // });
 
-     
+
     // 
     var mixer = mixitup('.all-products__inner-box');
 });
