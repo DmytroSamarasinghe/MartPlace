@@ -41,8 +41,7 @@ $(function () {
     $(".bottom-products .bottom-products__inner").slick({
         dots: false,
         slidesToShow: 3,
-        slidesToScroll: 3,
-        variableWidth: true,
+        slidesToScroll: 3, 
         appendArrows: $('.bottom-products__slider-btn'),
         nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
         prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>',
@@ -52,6 +51,13 @@ $(function () {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 835,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1, 
                 }
             },
            
@@ -119,14 +125,7 @@ $(function () {
     });
     //blog
 
-    // $('.product-one__tabs .tab, .settins__tabs .tab').on('click', function (event) {
-    //     var id = $(this).attr('data-id');
-    //     $('.product-one__tabs, .settins__tabs').find('.tab-item').removeClass('active-tab').hide();
-    //     $('.product-one__tabs .tabs, .settins__tabs .tabs').find('.tab').removeClass('active');
-    //     $(this).addClass('active');
-    //     $('#' + id).addClass('active-tab').fadeIn();
-    //     return false;
-    // });
+ 
 
 
     // 
