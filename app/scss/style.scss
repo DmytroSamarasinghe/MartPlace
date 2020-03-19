@@ -1052,8 +1052,7 @@
 
 // start_bottom-products
 .bottom-products__inner {
-  &.small-products {
-    margin-left: 0;
+  &.small-products { 
     .products__item {
       flex-basis: 0;
     }
@@ -1064,12 +1063,7 @@
   .products__item {
     margin-left: 14px;
     margin-right: 14px;
-  }
-  .slick-current {
-    .products__item {
-      margin-left: 0;
-    }
-  }
+  } 
 }
 // end_bottom-products
 

@@ -41,7 +41,7 @@ $(function () {
     $(".bottom-products .bottom-products__inner").slick({
         dots: false,
         slidesToShow: 3,
-        slidesToScroll: 3, 
+        slidesToScroll: 3,
         appendArrows: $('.bottom-products__slider-btn'),
         nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
         prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>',
@@ -57,10 +57,10 @@ $(function () {
                 breakpoint: 835,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1, 
+                    slidesToScroll: 1, centerPadding: '50px',
                 }
             },
-           
+
         ]
     });
 
@@ -125,7 +125,7 @@ $(function () {
     });
     //blog
 
- 
+
 
 
     // 

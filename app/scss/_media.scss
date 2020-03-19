@@ -61,7 +61,7 @@
     }
     .products__item-star.start-on {
       margin-left: 0;
-    }  
+    }
   }
   .single-product__add {
     .small-products .products__item {
@@ -168,7 +168,20 @@
     .news__contant-inner {
       flex-wrap: wrap;
     }
-  } 
+  }
+  .bottom-products {
+    .small-products {
+      justify-content: center;
+      margin-left: auto;
+    }
+    .small-products .products__item {
+      // max-width: ;
+    }
+    .bottom-products__inner .products__item {
+      margin-left:0;
+      margin-right: 0;
+    } 
+  }
 }
 @media (max-width: 1170px) {
   .header__top-contant {
@@ -387,7 +400,7 @@
       max-width: 100%;
     }
   }
-   
+
   .favorites__products-filter {
     .filter-contant {
       display: block;
@@ -395,7 +408,7 @@
     .filter-left {
       padding-top: 20px;
     }
-  } 
+  }
 }
 @media (max-width: 1100px) {
   .news {
@@ -747,11 +760,19 @@
   }
 
   .bottom-products {
+    .slick-slide.slick-current{
+      display: flex;
+      justify-content: center;
+    }
+    .slick-slide{
+      margin: auto 30px;
+    }
     .bottom-products__inner {
       margin-left: 0;
     }
     .products__item {
       max-width: 360px;
+      margin: auto -30px;
       flex-basis: 0;
     }
   }
@@ -825,7 +846,7 @@
     & + .footer__item-list {
       margin-left: 0;
     }
-  } 
+  }
 
   .info-box {
     .info__inner {
@@ -850,7 +871,7 @@
 @media (max-width: 600px) {
   .logo {
     width: 150px;
-  } 
+  }
   .box-alarm,
   .box-envelope {
     display: none;
@@ -1141,7 +1162,7 @@
     .aside__item {
       padding: 20px 15px;
     }
-  } 
+  }
   .search__text {
     line-height: 32px;
     padding: 20px 0;
@@ -1170,14 +1191,14 @@
       padding: 20px 5px;
     }
   }
-  .all-products{
+  .all-products {
     .small-products .products__item-star.start-on,
-    .small-products .products__item-star.start-off{
+    .small-products .products__item-star.start-off {
       margin-left: 0;
       width: 70%;
       margin-top: 10px;
     }
-    .products__item-shop{
+    .products__item-shop {
       margin-top: 10px;
     }
   }
@@ -1284,7 +1305,7 @@
       &:first-child {
         margin-right: 0;
       }
-      &:last-child{
+      &:last-child {
         margin-left: 5px;
       }
     }
@@ -1305,7 +1326,7 @@
     li {
       width: 100%;
     }
-  } 
+  }
 }
 @media (min-width: 1171px) {
   .menu__list {
