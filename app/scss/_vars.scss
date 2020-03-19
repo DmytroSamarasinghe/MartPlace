@@ -1,0 +1,42 @@
+$ff-r: "Quicksand-Regular", sans-serif; //regular
+$ff-fg: "Quicksand", sans-serif; //font-google
+$text: #555555;
+$bg: #eef1f3;
+$grey: #898f96;
+$blue: #0674ec;
+$black: #333333;
+$border: #d9dfe5;
+$bg-blue: #2b4ed0;
+$bg-green: #62d03b;
+$bg-red: #ff6a6c;
+$purpul: #7347c1;
+$bg-yellow: #feb71d;
+
+@mixin f500 {
+  font-family: $ff-fg;
+  font-weight: 500;
+}
+
+@mixin f700 {
+  font-family: $ff-fg;
+  font-weight: 700;
+}
+
+@mixin circle() {
+  @for $i from 1 through 7 {
+    $top: $i + 9.5px;
+    .stripe-#{$i} {
+      &::before {
+        top: $top;
+      }
+    }
+  }
+}
+
+@mixin border() {
+  border: none;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
